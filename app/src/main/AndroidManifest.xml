@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adscc">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ADSCC">
+        <activity android:name=".Admin.AdminDashBoard"></activity>
+        <activity android:name=".Admin.AdminBookingList" />
+        <activity android:name=".Activities.HomeService" />
+        <activity android:name=".Activities.Appointment_Details" />
+        <activity android:name=".Activities.CheckResults" />
+        <activity android:name=".Activities.Register_Covid" />
+        <activity
+            android:name=".Activities.Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.ADSCC.NoActionBar" />
+        <activity android:name=".Activities.MainScreen" />
+        <activity android:name=".Activities.OtpVerification" />
+        <activity android:name=".Activities.Create_Account" />
+        <activity android:name=".Activities.Dashboard" />
+        <activity android:name=".Maps.MapsActivity" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCzaonoYQ4clO0wtHbED60OT4f6EItEf1I" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

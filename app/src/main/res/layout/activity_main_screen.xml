@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.MainScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="243dp"
+            android:layout_height="106dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/Reg_text"
+            android:layout_width="273dp"
+            android:layout_height="49dp"
+            android:background="#794B9F97"
+            android:fontFamily="@font/arima_madurai_black"
+            android:text="Start Service"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.079" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:onClick="onClickHomeService"
+                android:padding="20dp"
+                android:background="@drawable/back_square_dark"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Home Service"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/arima_madurai_black"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/homeservice"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:onClick="onClickRegister"
+                android:padding="20dp"
+                android:background="@drawable/back_square_dark"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Register for \ncovid-19 test"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/arima_madurai_black"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/register_covid"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:onClick="onClickCheckResult"
+                android:padding="20dp"
+                android:background="@drawable/back_square_dark"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Check Result"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/arima_madurai_black"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/check_result"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

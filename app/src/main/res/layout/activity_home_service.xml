@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.HomeService">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="243dp"
+            android:layout_height="106dp"
+            android:src="@drawable/icon"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/Reg_text"
+            android:layout_width="273dp"
+            android:layout_height="49dp"
+            android:background="#794B9F97"
+            android:fontFamily="@font/arima_madurai_black"
+            android:text="Home Service"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.079" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Date"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arima_madurai_black"
+                android:textColor="@color/mycolor"
+                />
+            <EditText
+                android:id="@+id/edittxtDate"
+                android:layout_marginTop="5dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:focusable="false"
+                android:editable="false"
+                android:background="@drawable/rounded_edittext"
+                android:drawableRight="@drawable/ic_date" />
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Time"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arima_madurai_black"
+                android:textColor="#009688"
+                />
+            <EditText
+                android:id="@+id/edittxtTime"
+                android:layout_marginTop="5dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:focusable="false"
+                android:editable="false"
+                android:background="@drawable/rounded_edittext"
+                android:drawableRight="@drawable/ic_time" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:text="Examination Type"
+                android:textColor="#009688"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+
+                    android:id="@+id/lytType1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@color/mycolor"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/txtPriceType1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="FT (AED 360)"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/arima_madurai_black"
+                        />
+
+
+
+
+                    <TextView
+                        android:id="@+id/txtTimeType1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="30dp"
+                        android:text="result in 3 hours"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lytType2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/back_square_dark"
+                    android:layout_marginLeft="10dp">
+
+
+                    <TextView
+                        android:id="@+id/txtPriceType2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="REG (AED 180)"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray"
+                        android:fontFamily="@font/arima_madurai_black"
+                        />
+
+
+
+
+                    <TextView
+                        android:id="@+id/txtTimeType2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:text="result in 8 hours"
+                        android:textSize="17dp"
+                        android:textColor="@color/gray"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Detail"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arima_madurai_black"
+                android:textColor="#009688"
+                />
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="52dp"
+                android:text="Select From Map"
+                android:textStyle="bold"
+                android:onClick="onClickSelectFromMap"
+                app:backgroundTint="#03A9F4"
+                />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/arima_madurai_black"
+                android:textColor="#009688"
+                />
+
+
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableRight="@drawable/ic_location"
+                android:hint="Add Your Location Manualy"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:text="No Of People"
+                android:textColor="#009688"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <EditText
+                android:id="@+id/editTextNoOfPeople"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="No Of Persons"
+                android:padding="10dp"
+                android:maxLength="2"
+                android:text="1"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/arima_madurai_black"
+                    android:text="Total Price  : "
+                    android:textColor="#009688"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/arima_madurai_black"
+                    android:text=" 0 "
+                    android:textColor="#515353"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/arima_madurai_black"
+                android:text="Payment Method"
+                android:textColor="#009688"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:orientation="vertical"
+                >
+
+
+                <RadioButton
+                    android:id="@+id/btnCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/btnCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="Credit Card"
+                    />
+
+                <RadioButton
+                    android:id="@+id/btnApplePay"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple Pay"
+                    />
+
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="52dp"
+                android:text="Book Appointment"
+                android:textStyle="bold"
+                android:onClick="onClickBookAppointment"
+                app:backgroundTint="#28818D"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
